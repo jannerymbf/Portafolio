@@ -1,0 +1,7 @@
+:root {
+  --dark-purple : #100718;
+}
+
+* {
+  background: var(--dark-purple);
+}

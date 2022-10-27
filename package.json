@@ -1,0 +1,25 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "my personal portafolio",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jannerymbf/Portafolio.git"
+  },
+  "author": "Jannery Briceño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jannerymbf/Portafolio/issues"
+  },
+  "homepage": "https://github.com/jannerymbf/Portafolio#readme",
+  "dependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
+    "gh-pages": "^4.0.0",
+    "serve": "^14.0.1"
+  }
+}
