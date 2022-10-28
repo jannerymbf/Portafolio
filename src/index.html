@@ -9,9 +9,186 @@
 </head>
 
 <body>
-  <nav>
-    <img src="" alt="">
+  <nav id="navbar" class="navbar flex-column">
+    <div class="flex-row navbar-menu">
+      <a href="#welcome"><img src="./assets/home.png" alt="home" class="navbar-img"></a>
+      <a href="#welcome" style="text-decoration: none;"><p id="nav-home" class="navbar-text">HOME</p></a>
+    </div>
+    <div class="flex-row navbar-menu">
+      <a href="#aboutme"><img src="./assets/aboutme.png" alt="aboutMe" class="navbar-img"></a>
+      <a href="#aboutme" style="text-decoration: none;"><p id="nav-about" class="navbar-text">ABOUT</p></a>
+    </div>
+    <div class="flex-row navbar-menu">
+      <a href="#tech-skills"><img src="./assets/skills.png" alt="skills" class="navbar-img"></a>
+      <a href="#tech-skills" style="text-decoration: none;"><p id="nav-skills" class="navbar-text">SKILLS</p></a>
+    </div>
+    <div class="flex-row navbar-menu">
+      <a href="#projects"><img src="./assets/projects.png" alt="projects" class="navbar-img"></a>
+      <a href="#projects" style="text-decoration: none;"><p id="nav-projects" class="navbar-text">PROJECTS</p></a>
+    </div>
+    <div class="flex-row navbar-menu">
+      <a href="#contact"><img src="./assets/contact.png" alt="contactMe" class="navbar-img"></a>
+      <a href="#contact" style="text-decoration: none;"><p id="nav-contact" class="navbar-text">CONTACT</p></a>
+    </div>
   </nav>
+
+  <section id="welcome" class="welcome section flex-row">
+    <img src="./assets/me.png" alt="Jannery's picture" class="welcome-photo">
+    <div class="welcome-text">
+      <h2 class="welcome-text-greet">Hi there! I'm</h2>
+      <h1 class="welcome-text-name">Jannery</h1>
+      <p class="welcome-text-intro">A <span class="subtext">Front-End Web Developer</span> passionate about <br> creating interactive, attractive and functional <br> applications and experiences on the web.</p>
+    </div>
+  </section>
+
+  <section id="aboutme" class="about section flex-column">
+    <span class="section-head flex-row">
+      <h2 class="section-title">About me</h2>
+      <div class="section-line"></div>
+    </span>
+    <div class="section-box about-text">
+      <p class="section-text">Hi! I’m a <span class="subtext">front-end developer</span>, a systems engineering graduate and an <br>English teacher. I'm fueled by my passion for learning about technology, <br>visual design, and English since I strongly believe that we are forever <br>students. Recently, I graduated from Laboratoria. My experience there and <br>the previous ones have taught me to be flexible, analytical, sympathetic, a <br>risk-taker, to assume leadership roles, and that I enjoy solving problems <br>through code. I am excited to work alongside other amazing programmers <br>and learn so much more!</p>
+    </div>
+  </section>
+
+  <section id="tech-skills" class="section flex-column">
+    <span class="section-head flex-row">
+      <h2 class="section-title">Tech Skills</h2>
+      <div class="section-line"></div>
+    </span>
+    <div class="tech-tools one section-box flex-row">
+      <div class="tech-oneTool flex-column">
+        <img class="tech-logos" src="./assets/js.png" alt="logo-JS">
+        <h6>JavaScript</h6>
+      </div>
+      <div class="tech-oneTool flex-column">
+        <img class="tech-logos" src="./assets/html-5.png" alt="logo-HTML">
+        <h6>HTML</h6>
+      </div>
+      <div class="tech-oneTool flex-column">
+        <img class="tech-logos" src="./assets/css-3.png" alt="logo-CSS">
+        <h6>CSS</h6>
+      </div>
+      <div class="tech-oneTool flex-column">
+        <img class="tech-logos" src="./assets/angular.png" alt="logo-Angular">
+        <h6>Angular</h6>
+      </div>
+    </div>
+
+    <div class="tech-tools two section-box flex-row">
+      <div class="tech-oneTool flex-column">
+        <img class="tech-logos" src="./assets/Git.png" alt="logo-Git">
+        <h6>Git</h6>
+      </div>
+      <div class="tech-oneTool flex-column">
+        <img class="tech-logos" src="./assets/firebase.png" alt="logo-Firebase">
+        <h6>Firebase</h6>
+      </div>
+      <div class="tech-oneTool flex-column">
+        <img class="tech-logos" src="./assets/vscode.png" alt="logo-VSCode">
+        <h6>VS Code</h6>
+      </div>
+      <div class="tech-oneTool flex-column">
+        <img class="tech-logos" src="./assets/figma.png" alt="logo-Figma">
+        <h6>Figma</h6>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section flex-column">
+    <span class="section-head flex-row">
+      <h2 class="section-title">My Projects</h2>
+      <div class="section-line"></div>
+    </span>
+    <div class="project-list flex-column">
+      <!-- Burger Queen -->
+      <div class="project-container section-box flex-row">
+        <div class="project-view flex-column">
+          <img class="project-img" src="./assets/burgerQueen.png" alt="project-BurgerQueen">
+          <span class="project-buttons flex-row">
+            <a href="https://jmbf-burger-queen.netlify.app/" target=”_blank”><div class="project-btn">Live</div></a>
+            <a href="https://github.com/jannerymbf/LIM018-burger-queen" target=”_blank”><div class="project-btn">Repo</div></a>
+          </span>
+        </div>
+        <div class="project-description flex-column">
+          <h3 class="project-description-title subtext">Burger Queen</h3>
+          <p class="project-description-intro">Web application that allows <br>fast food restaurants manage their orders.</p>
+          <p class="subtext">Tools: <span>Angular, TypeScript, Firestore, <br>Java Script, HTML, CSS, Figma, GitHub</span></p>
+        </div>
+      </div>
+      <!-- MD-links -->
+      <div class="project-container section-box flex-row">
+        <div class="project-view flex-column">
+          <img class="project-img" src="./assets/mdlinks.png" alt="project-MdLinks">
+          <span class="project-buttons flex-row">
+            <a href="https://www.npmjs.com/package/@jannerybf/md-links" target=”_blank”><div class="project-btn">Live</div></a>
+            <a href="https://github.com/jannerymbf/LIM018-md-links" target=”_blank”><div class="project-btn">Repo</div></a>
+          </span>
+        </div>
+        <div class="project-description flex-column">
+          <h3 class="project-description-title subtext">Md-Links</h3>
+          <p class="project-description-intro">A command-line interface and a <br>library that allow users to identify the <br>available and unavailable links inside a <br>markdown file from a given path.</p>
+          <p class="subtext">Tools: <span>Node.JS, Java Script, <br> Flow Diagrams, GitHub</span></p>
+        </div>
+      </div>
+      <!-- Social Network -->
+      <div class="project-container section-box flex-row">
+        <div class="project-view flex-column">
+          <img class="project-img" src="./assets/socialNetwork.png" alt="project-SocialNetwork">
+          <span class="project-buttons flex-row">
+            <a href="https://jannerymbf.github.io/LIM018-social-network/" target=”_blank”><div class="project-btn">Live</div></a>
+            <a href="https://github.com/jannerymbf/LIM018-social-network" target=”_blank”><div class="project-btn">Repo</div></a>
+          </span>
+        </div>
+        <div class="project-description flex-column">
+          <h3 class="project-description-title subtext">Social Network</h3>
+          <p class="project-description-intro">Web application that allows animal lovers <br>to sign up, log in, add posts, like, delete,<br> and edit what they have posted.</p>
+          <p class="subtext">Tools: <span>HTML, CSS, JS, Firebase, Git, Figma</span></p>
+        </div>
+      </div>
+      <!-- Data Lovers -->
+      <div class="project-container section-box flex-row">
+        <div class="project-view flex-column">
+          <img class="project-img" src="./assets/datLovers.png" alt="project-DataLovers">
+          <span class="project-buttons flex-row">
+            <a href="https://jannerymbf.github.io/LIM018-data-lovers/" target=”_blank”><div class="project-btn">Live</div></a>
+            <a href="https://github.com/jannerymbf/LIM018-data-lovers" target=”_blank”><div class="project-btn">Repo</div></a>
+          </span>
+        </div>
+        <div class="project-description flex-column">
+          <h3 class="project-description-title subtext">Data Lovers</h3>
+          <p class="project-description-intro">Web page that allows users to navigate <br>through interesting data and facts from one <br>of the most famous sagas, Harry Potter.</p>
+          <p class="subtext">Tools: <span>HTML, CSS, JS, Git, Figma</span></p>
+        </div>
+      </div>
+      <!-- Card Validation -->
+      <div class="project-container section-box flex-row">
+        <div class="project-view flex-column">
+          <img class="project-img" src="./assets/cardValidation.png" alt="project-CardValidation">
+          <span class="project-buttons flex-row">
+            <a href="https://jannerymbf.github.io/LIM018-card-validation/" target=”_blank”><div class="project-btn">Live</div></a>
+            <a href="https://github.com/jannerymbf/LIM018-card-validation" target=”_blank”><div class="project-btn">Repo</div></a>
+          </span>
+        </div>
+        <div class="project-description flex-column">
+          <h3 class="project-description-title subtext">Card Validation</h3>
+          <p class="project-description-intro">Web application that allows users to <br> validate credit/debit card numbers.</p>
+          <p class="subtext">Tools: <span>HTML, CSS, JS, Git, Figma</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section flex-column">
+    <span class="section-head flex-row">
+      <h2 class="section-title">Contact me</h2>
+      <div class="section-line"></div>
+    </span>
+    <div class="section-box">
+      
+    </div>
+  </section>
+  
 </body>
 
 <script src="index.js"></script>

@@ -1,7 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Homemade+Apple&family=Poppins:wght@400;500;600;700;800;900&family=Questrial&family=Send+Flowers&display=swap');
+
 :root {
-  --dark-purple : #100718;
+  --dark-purple: #100718;
+  --lighter-purple: #170923;
+  --white: #fff;
+  --pink: #DB026A;
+  --dark-pink: #A3014F;
 }
 
 * {
-  background: var(--dark-purple);
+  margin: 0;
+  padding: 0;
+
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
 }
+
+body {
+  background: var(--dark-purple);
+  position: relative;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  position: fixed;
+  height: 100vh;
+  width: 7vw;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 40px;
+  gap: 30px;
+  z-index: 10;
+}
+
+.navbar-menu {
+  gap: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar-img {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-img:hover {
+  background-blend-mode: screen;
+  filter: drop-shadow(0px 6px 10px #DB026A); 
+}
+
+.navbar-text {
+  display: none;
+}
+
+.navbar-text:hover {
+  text-shadow:
+    0 0 7px #fff,
+    0 0 42px #f09,
+    0 0 82px #f09,
+    0 0 92px #f09,
+    0 0 102px #f09;
+}
+
+
+/* Style for sections */
+
+.section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section-head {
+  justify-content: flex-end;
+  align-items: center;
+  gap: 150px; 
+  margin: 140px 0px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.section-line {
+  width: 60vw;
+  height: 2px;
+  background: var(--white);
+}
+
+.section-box {
+  align-self: center;
+  justify-self: center;
+  background-color: var(--lighter-purple);
+  padding: 30px 50px;
+  border-radius: 20px;
+  width: 60%;
+}
+
+.section-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Welcome section */
+
+.welcome {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.welcome-photo {
+  width: 340px;
+  height: 340px;
+  border-radius: 300px;
+  object-fit: cover;
+}
+
+.welcome-text-greet {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.welcome-text-name {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 64px;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #f09,
+    0 0 82px #f09,
+    0 0 92px #f09,
+    0 0 102px #f09,
+    0 0 151px #f09;
+  z-index: 100;
+}
+
+.welcome-text-intro {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.subtext {
+  color: var(--pink);
+}
+
+/* About me Section */
+
+.about-text {
+  text-align: center;
+}
+
+/* Tech skills Section */
+
+.tech-tools {
+  gap: 170px;
+  justify-content: center;
+}
+
+.one {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.two {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.tech-oneTool {
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tech-logos {
+  width: 64px;
+  height: 64px;
+  background-color: var(--lighter-purple);
+}
+
+/* Flashing */
+.tech-logos:hover {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.tech-oneTool h6 {
+  font-size: 16px;
+}
+
+/* Projects Section */
+
+#projects {
+  height: auto;
+}
+
+.project-list {
+  gap: 50px;
+}
+
+.project-container {
+  gap: 80px;
+  align-items: center;
+}
+
+.project-view {
+  gap: 10px;
+}
+
+.project-img {
+  width: 320px;
+  height: 200px;
+  object-fit:fill;
+  border-radius: 10px;
+}
+
+.project-buttons {
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.project-buttons a {
+  text-decoration: none;
+}
+
+.project-btn {
+  width: 140px;
+  height: 30px;
+  background-color: var(--dark-pink);
+  text-align: center;
+  line-height: 1.4;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.project-btn:hover {
+  background-color: var(--pink); 
+}
+
+.project-description {
+  gap: 15px;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.project-description-title {
+  font-size: 32px;
+}
+
+/* Contact Section */
