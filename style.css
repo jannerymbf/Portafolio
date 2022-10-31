@@ -283,3 +283,55 @@ body {
 }
 
 /* Contact Section */
+
+#contact {
+  margin-bottom: 150px;
+}
+
+.contact-container {
+  justify-content: center;
+  gap: 30px;
+}
+
+.contact-img {
+  height: 70px;
+  width: 70px;
+}
+
+.contact-img:hover {
+	opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.contact-box {
+  width: 15%;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-box h5 {
+  color: var(--pink);
+  font-size: 16px;
+}
+
+.contact-box h6 {
+  font-size: 12px;
+}
